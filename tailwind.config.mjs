@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
@@ -10,14 +12,17 @@ export default {
 			"raleway": ["Raleway", "sans-serif"],
 		},
 		colors: {
-			'obscure': '#252238',
+			'transparent': 'transparent',
+			'current': 'currentColor',
+			'obscure': '#1E1613',
 			'blank': '#D9D9D9',
 			'blank-dark': '#9CA2C3',
 			'blank-light': '#CFDCE7',
-			// 'first': '#252238',
+			'primary': '#3085B1',
 			'second': '#CF9065',
 			'second-dark': '#63815E',
-			'second-light': '#CA8589'
+			'second-light': '#CA8589',
+			...colors,
 		}
 	},
 	darkMode: ['class'],

@@ -1,5 +1,20 @@
 import type { Project } from "./types";
 
+export const HERO_CONTENT = {
+  es: {
+    title: "Desarrolladora Frontend",
+    slogan: "Empodero tu negocio con tecnologia",
+    description:
+      "Analizo tus necesidades y creo una estrategia digital a tu medida, que incluye: sitio web, correo corporativo, posicionamiento en Google Maps, enlaces para biografía y mucho más.",
+  },
+  en: {
+    title: "Frontend Developer",
+    slogan: "Empower your business with technology",
+    description:
+      "I analyze your needs and create a tailored digital strategy for you, which includes: a website, corporate email, positioning on Google Maps, bio links, and much more.",
+  },
+};
+
 export const PROJECTS: Project[] = [
   {
     name: "Diet Pixie",

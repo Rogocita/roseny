@@ -1,3 +1,5 @@
+export type Language = "es" | "en";
+
 export type Project = {
   name: string;
   collaboration: boolean;
