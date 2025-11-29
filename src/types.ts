@@ -1,5 +1,14 @@
 export type Language = "es" | "en";
 
+export type Experience = {
+  name: string;
+  description: { [key in Language]: string };
+  processImage: string;
+  previewImage: string;
+  urlProject: string;
+  technologies: string[];
+};
+
 export type Project = {
   name: string;
   collaboration: boolean;

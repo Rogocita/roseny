@@ -1,4 +1,4 @@
-import type { Project } from "./types";
+import type { Experience, Project } from "./types";
 
 export const HERO_CONTENT = {
   es: {
@@ -14,6 +14,42 @@ export const HERO_CONTENT = {
       "I analyze your needs and create a tailored digital strategy for you, which includes: a website, corporate email, positioning on Google Maps, bio links, and much more.",
   },
 };
+
+export const EXPERIENCE = {
+  es: { title: "Experiencia" },
+  en: { title: "Experience" },
+};
+
+export const ALL_EXPERIENCES: Experience[] = [
+  {
+    name: "Grain's Taqe",
+    description: {
+      // es: "Mejora del diseño para mostrar la información de forma clara sin perder la inmersión. Implementacion de otro idioma y ",
+      es: "Mejora del diseño a medida, cuyo enfoque fue el flujo de la informacion para el usuario final. En la implementacion se aprovecho el i18n integrado en astro para la internacionalizacion",
+      en: "Design improvement to display information clearly without losing immersiveness.",
+    },
+    processImage: "/experience/process.grainstaqe.png",
+    previewImage: "/experience/preview.grainstaqe.png",
+    urlProject: "https://grainstaqe.com/",
+    technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
+  },
+  // {
+  //   name: "Pocket Budget",
+  //   description: { es: "", en: "" },
+  //   processImage: "",
+  //   previewImage: "",
+  //   urlProject: "",
+  //   technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
+  // },
+  // {
+  //   name: "Card Quest",
+  //   description: { es: "", en: "" },
+  //   processImage: "",
+  //   previewImage: "",
+  //   urlProject: "",
+  //   technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
+  // },
+];
 
 export const PROJECTS: Project[] = [
   {

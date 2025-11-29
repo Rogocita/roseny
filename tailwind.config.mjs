@@ -16,7 +16,7 @@ export default {
 			'current': 'currentColor',
 			'obscure': '#1E1613',
 			'blank': '#D9D9D9',
-			'blank-dark': '#9CA2C3',
+			'blank-dark': '#6EA9C8',
 			'blank-light': '#CFDCE7',
 			'primary': '#3085B1',
 			'second': '#CF9065',

@@ -3,10 +3,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 import { Contact } from "../components/Contact";
 import { HeroSection } from "../components/HeroSection";
+import { Experience } from "../components/Experience";
 ---
 
 <BaseLayout>
   <HeroSection client:idle lang="es" />
+  <Experience client:idle lang="es" />
   <!-- <section class="min-h-dvh flex flex-col justify-center py-5 gap-20">
     <h2
       class="text-center text-blank-light font-bold text-[36px] md:text-[40px] lg:text-[48px]"

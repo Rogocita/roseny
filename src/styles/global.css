@@ -69,6 +69,23 @@ html::-webkit-scrollbar-button:hover {
   background-color: #999999;
 }
 
+.image-preview {
+  overflow-y: scroll;
+}
+
+.image-preview::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.image-preview::-webkit-scrollbar-thumb {
+  background: var(--scroll-bar);
+  border-radius: 5px;
+  border: 2px solid var(--scroll-bg);
+}
+.image-preview::-webkit-scrollbar-track {
+  background-color: var(--scroll-bg);
+}
+
 h1,
 h2 {
   text-align: center;
