@@ -1,4 +1,4 @@
-import type { Experience, Project } from "./types";
+import type { ExperienceType, Project } from "./types";
 
 export const HERO_CONTENT = {
   es: {
@@ -20,35 +20,34 @@ export const EXPERIENCE = {
   en: { title: "Experience" },
 };
 
-export const ALL_EXPERIENCES: Experience[] = [
+export const ALL_EXPERIENCES: ExperienceType[] = [
   {
     name: "Grain's Taqe",
     description: {
-      // es: "Mejora del diseño para mostrar la información de forma clara sin perder la inmersión. Implementacion de otro idioma y ",
-      es: "Mejora del diseño a medida, cuyo enfoque fue el flujo de la informacion para el usuario final. En la implementacion se aprovecho el i18n integrado en astro para la internacionalizacion",
-      en: "Design improvement to display information clearly without losing immersiveness.",
+      es: "Mejora del diseño a medida, cuyo enfoque fue el flujo de la informacion para el usuario final. En la implementacion se aprovecho uso i18n para la internacionalizacion.",
+      en: "The design was improved to better suitability, focusing on the flow of information for the end user. The implementation leveraged the i18n framework for internationalization.",
     },
     processImage: "/experience/process.grainstaqe.png",
     previewImage: "/experience/preview.grainstaqe.png",
     urlProject: "https://grainstaqe.com/",
     technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
   },
-  // {
-  //   name: "Pocket Budget",
-  //   description: { es: "", en: "" },
-  //   processImage: "",
-  //   previewImage: "",
-  //   urlProject: "",
-  //   technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
-  // },
-  // {
-  //   name: "Card Quest",
-  //   description: { es: "", en: "" },
-  //   processImage: "",
-  //   previewImage: "",
-  //   urlProject: "",
-  //   technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
-  // },
+  {
+    name: "Pocket Budget",
+    description: { es: "", en: "" },
+    processImage: "",
+    previewImage: "",
+    urlProject: "",
+    technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
+  },
+  {
+    name: "Card Quest",
+    description: { es: "", en: "" },
+    processImage: "",
+    previewImage: "",
+    urlProject: "",
+    technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
+  },
 ];
 
 export const PROJECTS: Project[] = [

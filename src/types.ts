@@ -1,6 +1,6 @@
 export type Language = "es" | "en";
 
-export type Experience = {
+export type ExperienceType = {
   name: string;
   description: { [key in Language]: string };
   processImage: string;

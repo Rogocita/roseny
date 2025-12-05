@@ -43,7 +43,7 @@ html::-webkit-scrollbar {
 html::-webkit-scrollbar-thumb {
   background: var(--scroll-bar);
   border-radius: 5px;
-  border: 2px solid var(--scroll-bg);
+  border: 1px solid var(--scroll-bg);
 }
 
 html::-webkit-scrollbar-track {
@@ -74,13 +74,13 @@ html::-webkit-scrollbar-button:hover {
 }
 
 .image-preview::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 8px;
 }
 .image-preview::-webkit-scrollbar-thumb {
   background: var(--scroll-bar);
-  border-radius: 5px;
-  border: 2px solid var(--scroll-bg);
+  border-radius: 4px;
+  border: 1px solid var(--scroll-bg);
 }
 .image-preview::-webkit-scrollbar-track {
   background-color: var(--scroll-bg);
