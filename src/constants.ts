@@ -1,4 +1,4 @@
-import type { ExperienceType, Project } from "./types";
+import type { CollaborationType, ExperienceType, Project } from "./types";
 
 export const HERO_CONTENT = {
   es: {
@@ -15,7 +15,7 @@ export const HERO_CONTENT = {
   },
 };
 
-export const EXPERIENCE = {
+export const EXPERIENCE_TITTLE = {
   es: { title: "Experiencia" },
   en: { title: "Experience" },
 };
@@ -48,6 +48,46 @@ export const ALL_EXPERIENCES: ExperienceType[] = [
     urlProject: "",
     technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
   },
+];
+
+export const COLLABORATIONS_TITTLE = {
+  es: { title: "Colaboraciones" },
+  en: { title: "Collaborations" },
+};
+
+export const ALL_COLLABORATIONS: CollaborationType[] = [
+  // {
+  //   organizationName: "elVegador's forge",
+  //   organizationLogo:
+  //     "https://avatars.githubusercontent.com/u/236291718?s=200&v=4",
+  //   projectName: "ev-forge/icons",
+  //   urlProject: "",
+  //   impressionImgMd: "/collaboration/afordin-md.png",
+  //   impressionImgSm: "/collaboration/afordin-sm.png",
+  // },
+  // {
+  //   organizationName: "Partnership with elVengador",
+  //   organizationLogo: "https://www.jimynicanor.com/favicon.svg",
+  //   projectName: "ev-component-library oldest version",
+  //   urlProject: "",
+  //   impressionImg: "",
+  // },
+  {
+    organizationName: "Afordin",
+    organizationLogo:
+      "https://avatars.githubusercontent.com/u/128504393?s=200&v=4",
+    projectName: "Afordin website",
+    urlProject: "https://afordin.netlify.app/",
+    impressionImgMd: "/collaboration/afordin-md.png",
+    impressionImgSm: "/collaboration/afordin-sm.png",
+  },
+  // {
+  //   organizationName: "Partnership with DevCorvus",
+  //   organizationLogo: "https://devcorvus.github.io/apple-touch-favicon.png",
+  //   projectName: "Cartago ecommerce",
+  //   urlProject: "",
+  //   impressionImg: "",
+  // },
 ];
 
 export const PROJECTS: Project[] = [

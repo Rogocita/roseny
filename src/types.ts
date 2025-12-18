@@ -9,6 +9,15 @@ export type ExperienceType = {
   technologies: string[];
 };
 
+export type CollaborationType = {
+  organizationName: string;
+  organizationLogo: string;
+  projectName: string;
+  urlProject: string;
+  impressionImgMd: string;
+  impressionImgSm: string;
+};
+
 export type Project = {
   name: string;
   collaboration: boolean;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Language } from "../types";
-import { ALL_EXPERIENCES, EXPERIENCE } from "../constants";
+import { ALL_EXPERIENCES, EXPERIENCE_TITTLE } from "../constants";
 import { ExperienceCard } from "./ExperienceCard";
 import { ArrowLeft } from "./icons/ArrowLeft";
 import { ArrowRight } from "./icons/ArrowRight";
@@ -9,10 +9,9 @@ type ExperienceProps = { lang: Language };
 
 export const Experience = ({ lang }: ExperienceProps) => {
   const [currentExperience, setCurrentExperience] = useState(0);
-  console.log({ currentExperience });
   return (
     <section className="min-h-dvh flex flex-col justify-center gap-[80px]">
-      <h2 className="text-4xl md:text-5xl">{EXPERIENCE[lang].title}</h2>
+      <h2 className="text-4xl md:text-5xl">{EXPERIENCE_TITTLE[lang].title}</h2>
       <div className="w-full flex flex-col items-center justify-center gap-6 md:gap-9">
         {/* buttons for change experience */}
         <div className="w-full flex items-center justify-end gap-4">
