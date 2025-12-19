@@ -1,4 +1,9 @@
-import type { CollaborationType, ExperienceType, Project } from "./types";
+import type {
+  CaseStudyType,
+  CollaborationType,
+  ExperienceType,
+  Project,
+} from "./types";
 
 export const HERO_CONTENT = {
   es: {
@@ -87,6 +92,56 @@ export const ALL_COLLABORATIONS: CollaborationType[] = [
   //   projectName: "Cartago ecommerce",
   //   urlProject: "",
   //   impressionImg: "",
+  // },
+];
+
+export const CASE_STUDY = {
+  es: { title: "Iniciativa propia", paragraph: "Otra idea de web" },
+  en: { title: "Self-initiated", paragraph: "Another website idea" },
+};
+
+export const ALL_CASE_STUDIES: CaseStudyType[] = [
+  {
+    name: "Workout Tracker",
+    logo: "/case-study/WorkoutTracker.png",
+    description: { es: "", en: "" },
+    technologies: [""],
+    urlProject: "https://worktrack.jimynicanor.com/",
+  },
+  {
+    name: "Chuck Norris Joke",
+    logo: "/case-study/ChuckNorrisJoke.png",
+    description: { es: "", en: "" },
+    technologies: [""],
+    urlProject: "https://chuck-norris-joke.roseny.dev/",
+  },
+  {
+    name: "BitSip",
+    logo: "/case-study/BitSip.png",
+    description: { es: "", en: "" },
+    technologies: [""],
+    urlProject: "https://bitsip.roseny.dev/",
+  },
+  {
+    name: "Diet Pixie",
+    logo: "/case-study/DietPixie.png",
+    description: { es: "", en: "" },
+    technologies: [""],
+    urlProject: "https://diet-pixie.roseny.dev/",
+  },
+  {
+    name: "To-Do",
+    logo: "/case-study/ToDo.png",
+    description: { es: "", en: "" },
+    technologies: [""],
+    urlProject: "https://to-do.roseny.dev/",
+  },
+  // {
+  //   name: "Dashboard",
+  //   logo: "",
+  //   description: { es: "", en: "" },
+  //   technologies: [""],
+  //   urlProject: "https://dashboard.roseny.dev/",
   // },
 ];
 

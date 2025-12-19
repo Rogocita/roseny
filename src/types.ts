@@ -18,6 +18,14 @@ export type CollaborationType = {
   impressionImgSm: string;
 };
 
+export type CaseStudyType = {
+  name: string;
+  description: { [key in Language]: string };
+  logo: string;
+  urlProject: string;
+  technologies: string[];
+};
+
 export type Project = {
   name: string;
   collaboration: boolean;

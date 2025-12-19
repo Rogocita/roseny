@@ -5,12 +5,14 @@ import { Contact } from "../components/Contact";
 import { HeroSection } from "../components/HeroSection";
 import { Experience } from "../components/Experience";
 import { Collaborations } from "../components/Collaborations";
+import { CaseStudy } from "../components/CaseStudy";
 ---
 
 <BaseLayout>
   <HeroSection client:idle lang="es" />
   <Experience client:idle lang="es" />
   <Collaborations client:only lang="es" />
+  <CaseStudy client:idle lang="es" />
 
   <!-- <section class="min-h-dvh flex flex-col justify-center py-5 gap-20">
     <h2
