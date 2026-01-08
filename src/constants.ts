@@ -145,6 +145,21 @@ export const ALL_CASE_STUDIES: CaseStudyType[] = [
   // },
 ];
 
+export const CONTACT_DATA = {
+  es: {
+    title: "",
+    paragraph: "",
+    forBusiness: "Quiero empoderar mi negocio",
+    forRecruiter: "Te quiero en mi equipo",
+  },
+  en: {
+    title: "",
+    paragraph: "",
+    forBusiness: "",
+    forRecruiter: "",
+  },
+};
+
 export const PROJECTS: Project[] = [
   {
     name: "Diet Pixie",

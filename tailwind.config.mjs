@@ -20,7 +20,7 @@ export default {
 			'blank-light': '#CFDCE7',
 			'primary': '#3085B1',
 			'second': '#CF9065',
-			'second-dark': '#63815E',
+			'second-dark': '#94dfec',
 			'second-light': '#CA8589',
 			...colors,
 		}

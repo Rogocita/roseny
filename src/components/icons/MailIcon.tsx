@@ -3,13 +3,17 @@ import type { SVGProps } from "react";
 
 export function MailIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        fillRule="evenodd"
-        d="M2 3.5h12a.5.5 0 0 1 .5.5v.572L8 8.286L1.5 4.572V4a.5.5 0 0 1 .5-.5m-.5 2.8V12a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5V6.3L8.372 9.8L8 10.014L7.628 9.8zM0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
-        clipRule="evenodd"
-      ></path>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+      >
+        <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+        <rect width={20} height={16} x={2} y={4} rx={2}></rect>
+      </g>
     </svg>
   );
 }

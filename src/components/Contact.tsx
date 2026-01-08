@@ -1,36 +1,19 @@
 import React from "react";
-import { MailIcon } from "./icons/MailIcon";
-import { GithubIcon } from "./icons/GithubIcon";
-import { LinkedinIcon } from "./icons/LinkedinIcon";
+import { Language } from "../types";
+import { CONTACT_DATA } from "../constants";
 
-export const Contact = () => {
+type ContactProps = { lang: Language };
+
+export const Contact = ({ lang }: ContactProps) => {
   return (
-    <section className="flex flex-col gap-8 items-center justify-center">
-      <a
-        href="mailto:contact@roseny.dev"
-        target="_blank"
-        className="flex flex-col items-center justify-center gap-1  hover:text-second-dark"
-      >
-        <MailIcon className="size-8" />
-        email
-      </a>
-      <div className="flex gap-16">
-        <a
-          href="https://www.linkedin.com/in/dev-roseny-quintanilla/"
-          target="_blank"
-          className="flex flex-col items-center justify-center gap-1  hover:text-second-dark"
-        >
-          <LinkedinIcon className="size-8" />
-          Linkedin
-        </a>
-        <a
-          href="https://github.com/Lachicagladiadora"
-          target="_blank"
-          className="flex flex-col items-center justify-center gap-1  hover:text-second-dark"
-        >
-          <GithubIcon className="size-8" />
-          GitHub
-        </a>
+    <section className="min-h-dvh flex flex-col justify-center gap-[60px] outline-none md:gap-[80px]">
+      <h2 className="text-4xl md:text-5xl">{CONTACT_DATA[lang].title}</h2>
+      <p className="text-primary text-center">
+        "{CONTACT_DATA[lang].paragraph}"
+      </p>
+      <div>
+        <div></div>
+        <div></div>
       </div>
     </section>
   );
