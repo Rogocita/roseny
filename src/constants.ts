@@ -147,16 +147,20 @@ export const ALL_CASE_STUDIES: CaseStudyType[] = [
 
 export const CONTACT_DATA = {
   es: {
-    title: "",
-    paragraph: "",
+    title: "Contáctame",
+    // paragraph: "",
     forBusiness: "Quiero empoderar mi negocio",
-    forRecruiter: "Te quiero en mi equipo",
+    btnBusiness: "Reinventate",
+    forRecruiter: "Quiero que formes parte de mi equipo",
+    btnRecruiter: "Contratame",
   },
   en: {
-    title: "",
-    paragraph: "",
-    forBusiness: "",
-    forRecruiter: "",
+    title: "Contact me",
+    // paragraph: "",
+    forBusiness: "I want to empower my business",
+    btnBusiness: "Reinvent",
+    forRecruiter: "I want you to be part of my team",
+    btnRecruiter: "Hire me",
   },
 };
 
