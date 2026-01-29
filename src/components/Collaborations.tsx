@@ -18,7 +18,7 @@ export const Collaborations = ({ lang }: CollaborationsProps) => {
   }, []);
 
   return (
-    <section className="">
+    <section className="min-h-dvh flex flex-col justify-center items-center outline-none gap-10 md:gap-20">
       <div className="flex flex-col justify-center gap-[80px] bg-[#241f1b] p-4 rounded-md">
         <h2 className="text-4xl md:text-5xl">
           {COLLABORATIONS_TITTLE[lang].title}

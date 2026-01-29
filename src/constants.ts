@@ -37,22 +37,22 @@ export const ALL_EXPERIENCES: ExperienceType[] = [
     urlProject: "https://grainstaqe.com/",
     technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
   },
-  {
-    name: "Pocket Budget",
-    description: { es: "", en: "" },
-    processImage: "",
-    previewImage: "",
-    urlProject: "",
-    technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
-  },
-  {
-    name: "Card Quest",
-    description: { es: "", en: "" },
-    processImage: "",
-    previewImage: "",
-    urlProject: "",
-    technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
-  },
+  // {
+  //   name: "Pocket Budget",
+  //   description: { es: "", en: "" },
+  //   processImage: "",
+  //   previewImage: "",
+  //   urlProject: "",
+  //   technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
+  // },
+  // {
+  //   name: "Card Quest",
+  //   description: { es: "", en: "" },
+  //   processImage: "",
+  //   previewImage: "",
+  //   urlProject: "",
+  //   technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
+  // },
 ];
 
 export const COLLABORATIONS_TITTLE = {
@@ -152,7 +152,7 @@ export const CONTACT_DATA = {
     forBusiness: "Quiero empoderar mi negocio",
     btnBusiness: "Reinventate",
     forRecruiter: "Quiero que formes parte de mi equipo",
-    btnRecruiter: "Contratame",
+    btnRecruiter: "Contrátame",
   },
   en: {
     title: "Contact me",

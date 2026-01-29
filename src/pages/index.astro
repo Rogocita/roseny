@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
+
+import { Header } from "../components/Header";
 import { Contact } from "../components/Contact";
 import { HeroSection } from "../components/HeroSection";
 import { Experience } from "../components/Experience";
@@ -8,6 +10,8 @@ import { Collaborations } from "../components/Collaborations";
 import { CaseStudy } from "../components/CaseStudy";
 import { Footer } from "../components/Footer";
 ---
+
+<Header lang="en" />
 
 <BaseLayout>
   <HeroSection client:idle lang="es" />
@@ -35,5 +39,5 @@ import { Footer } from "../components/Footer";
       I am looking for new opportunities
     </h2>
   </section> -->
-  <Footer lang="es" />
 </BaseLayout>
+<Footer lang="es" />

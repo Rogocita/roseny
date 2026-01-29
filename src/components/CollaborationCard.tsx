@@ -1,5 +1,6 @@
 import React from "react";
 import { CollaborationType, Language } from "../types";
+import { RedirectIcon } from "./icons/RedirectIcon";
 
 type CollaborationCardProps = {
   lang: Language;
@@ -31,10 +32,15 @@ export const CollaborationCard = ({
                 : collaboration.organizationName
             }
           />
-          <a href={collaboration.urlProject} target="_blank">
-            <h2 className="w-full text-primary text-start font-bold">
+          <a
+            href={collaboration.urlProject}
+            target="_blank"
+            className="flex items-center text-primary hover:text-second-dark"
+          >
+            <h2 className="w-full text-start font-bold">
               {collaboration.projectName}
             </h2>
+            <RedirectIcon className="size-8" />
           </a>
         </div>
         <img

@@ -14,42 +14,44 @@ export const Experience = ({ lang }: ExperienceProps) => {
       <h2 className="text-4xl md:text-5xl">{EXPERIENCE_TITTLE[lang].title}</h2>
       <div className="w-full flex flex-col items-center justify-center gap-6 md:gap-9">
         {/* buttons for change experience */}
-        <div className="w-full flex items-center justify-end gap-4">
-          <button
-            disabled={currentExperience < 1 ? true : false}
-            className={`p-2 rounded-full bg-primary ${
-              currentExperience < 1
-                ? "disabled:opacity-60"
-                : "enabled:text-blank"
-            }`}
-            onClick={() => {
-              setCurrentExperience((p) => {
-                if (p < 1) return ALL_EXPERIENCES.length - 1;
-                return p - 1;
-              });
-            }}
-          >
-            <ArrowLeft className="h-8" />
-          </button>
-          <button
-            disabled={
-              currentExperience > ALL_EXPERIENCES.length - 2 ? true : false
-            }
-            className={`p-2 rounded-full bg-primary ${
-              currentExperience > ALL_EXPERIENCES.length - 2
-                ? "disabled:opacity-60"
-                : "enabled:text-blank"
-            }`}
-            onClick={() => {
-              setCurrentExperience((p) => {
-                if (p > ALL_EXPERIENCES.length - 2) return 0;
-                return p + 1;
-              });
-            }}
-          >
-            <ArrowRight className="h-8" />
-          </button>
-        </div>
+        {ALL_EXPERIENCES.length > 1 && (
+          <div className="w-full flex items-center justify-end gap-4">
+            <button
+              disabled={currentExperience < 1 ? true : false}
+              className={`p-2 rounded-full bg-primary ${
+                currentExperience < 1
+                  ? "disabled:opacity-60"
+                  : "enabled:text-blank"
+              }`}
+              onClick={() => {
+                setCurrentExperience((p) => {
+                  if (p < 1) return ALL_EXPERIENCES.length - 1;
+                  return p - 1;
+                });
+              }}
+            >
+              <ArrowLeft className="h-8" />
+            </button>
+            <button
+              disabled={
+                currentExperience > ALL_EXPERIENCES.length - 2 ? true : false
+              }
+              className={`p-2 rounded-full bg-primary ${
+                currentExperience > ALL_EXPERIENCES.length - 2
+                  ? "disabled:opacity-60"
+                  : "enabled:text-blank"
+              }`}
+              onClick={() => {
+                setCurrentExperience((p) => {
+                  if (p > ALL_EXPERIENCES.length - 2) return 0;
+                  return p + 1;
+                });
+              }}
+            >
+              <ArrowRight className="h-8" />
+            </button>
+          </div>
+        )}
         {/* card */}
         <ExperienceCard
           lang={lang}
