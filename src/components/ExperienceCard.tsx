@@ -31,7 +31,7 @@ export const ExperienceCard = ({ lang, experience }: ExperienceCardProps) => {
         <a
           href={experience.urlProject}
           target="_blank"
-          className="flex gap-2 items-center text-sm font-semibold hover:text-second"
+          className="flex gap-2 items-center text-sm font-semibold transition-all hover:text-second"
         >
           Preview <ArrowTopRightOnSquare className="h-6" />{" "}
         </a>
