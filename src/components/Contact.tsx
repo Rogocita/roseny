@@ -20,7 +20,7 @@ export const Contact = ({ lang }: ContactProps) => {
             className="px-6 py-3 rounded-full border-2 border-primary hover:bg-blank-dark hover:text-obscure hover:border-blank-dark"
             href={`mailto:contact@roseny.dev?cc=contact@roseny.dev&bcc=contact@roseny.dev
             &subject=Quiero%20emppoderar%20mi%20negocio
-            &body=The%20body%20of%20the%20email`}
+            &body=Hola%20Roseny!%0D%0ATengo%20interes%20en%20empoderar%20mi%20negocio%20con%20tecnologia`}
           >
             {CONTACT_DATA[lang].btnBusiness}
           </a>
@@ -33,7 +33,7 @@ export const Contact = ({ lang }: ContactProps) => {
             className="px-6 py-3 rounded-full bg-primary hover:bg-blank-dark hover:text-obscure"
             href={`mailto:contact@roseny.dev?cc=contact@roseny.dev&bcc=contact@roseny.dev
             &subject=I%20want%20you%20in%20my%20team
-            &body=The%20body%20of%20the%20email`}
+            &body=Hi!%20Roseny.%0D%0AI%20am%20interested%20in%20your%20background%20and%20think%20you%20match%20with%20my%20team`}
           >
             {CONTACT_DATA[lang].btnRecruiter}
           </a>

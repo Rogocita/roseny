@@ -8,7 +8,7 @@
     45deg,
     rgb(var(--accent)),
     rgb(var(--accent-light)) 30%,
-    rgb(255, 255, 255) 60%
+    rgb(255, 255, 255) 60% --primary: #e32833; --secondary: #ff0c87;
   );
 
   --obscure: "#1E1613";
