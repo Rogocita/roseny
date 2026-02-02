@@ -14,7 +14,7 @@ export default {
 		colors: {
 			'transparent': 'transparent',
 			'current': 'currentColor',
-			'obscure': '#1E1613',
+			'obscure': '#0C0302',
 			'blank': '#D9D9D9',
 			'blank-dark': '#6EA9C8',
 			'blank-light': '#CFDCE7',
