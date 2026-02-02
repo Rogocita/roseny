@@ -1,4 +1,168 @@
-import type { Project } from "./types";
+import type {
+  CaseStudyType,
+  CollaborationType,
+  ExperienceType,
+  Project,
+} from "./types";
+
+export const HERO_CONTENT = {
+  es: {
+    title: "Desarrolladora Frontend",
+    slogan: "Empodero tu negocio con tecnologia",
+    description:
+      "Analizo tus necesidades y creo una estrategia digital a tu medida, que incluye: sitio web, correo corporativo, posicionamiento en Google Maps, enlaces para biografía y mucho más.",
+  },
+  en: {
+    title: "Frontend Developer",
+    slogan: "Empower your business with technology",
+    description:
+      "I analyze your needs and create a tailored digital strategy for you, which includes: a website, corporate email, positioning on Google Maps, bio links, and much more.",
+  },
+};
+
+export const EXPERIENCE_TITTLE = {
+  es: { title: "Experiencia" },
+  en: { title: "Experience" },
+};
+
+export const ALL_EXPERIENCES: ExperienceType[] = [
+  {
+    name: "Grain's Taqe",
+    description: {
+      es: "Mejora del diseño a medida, cuyo enfoque fue el flujo de la informacion para el usuario final. En la implementacion se aprovecho uso i18n para la internacionalizacion.",
+      en: "The design was improved to better suitability, focusing on the flow of information for the end user. The implementation leveraged the i18n framework for internationalization.",
+    },
+    processImage: "/experience/process.grainstaqe.png",
+    previewImage: "/experience/preview.grainstaqe.png",
+    urlProject: "https://grainstaqe.com/",
+    technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
+  },
+  // {
+  //   name: "Pocket Budget",
+  //   description: { es: "", en: "" },
+  //   processImage: "",
+  //   previewImage: "",
+  //   urlProject: "",
+  //   technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
+  // },
+  // {
+  //   name: "Card Quest",
+  //   description: { es: "", en: "" },
+  //   processImage: "",
+  //   previewImage: "",
+  //   urlProject: "",
+  //   technologies: ["Astro", "React", "Typescript", "TailwindCSS"],
+  // },
+];
+
+export const COLLABORATIONS_TITTLE = {
+  es: { title: "Colaboraciones" },
+  en: { title: "Collaborations" },
+};
+
+export const ALL_COLLABORATIONS: CollaborationType[] = [
+  // {
+  //   organizationName: "elVegador's forge",
+  //   organizationLogo:
+  //     "https://avatars.githubusercontent.com/u/236291718?s=200&v=4",
+  //   projectName: "ev-forge/icons",
+  //   urlProject: "",
+  //   impressionImgMd: "/collaboration/afordin-md.png",
+  //   impressionImgSm: "/collaboration/afordin-sm.png",
+  // },
+  // {
+  //   organizationName: "Partnership with elVengador",
+  //   organizationLogo: "https://www.jimynicanor.com/favicon.svg",
+  //   projectName: "ev-component-library oldest version",
+  //   urlProject: "",
+  //   impressionImg: "",
+  // },
+  {
+    organizationName: "Afordin",
+    organizationLogo:
+      "https://avatars.githubusercontent.com/u/128504393?s=200&v=4",
+    projectName: "Afordin website",
+    urlProject: "https://afordin.netlify.app/",
+    impressionImgMd: "/collaboration/afordin-md.png",
+    impressionImgSm: "/collaboration/afordin-sm.png",
+  },
+  // {
+  //   organizationName: "Partnership with DevCorvus",
+  //   organizationLogo: "https://devcorvus.github.io/apple-touch-favicon.png",
+  //   projectName: "Cartago ecommerce",
+  //   urlProject: "",
+  //   impressionImg: "",
+  // },
+];
+
+export const CASE_STUDY = {
+  es: { title: "Iniciativa propia", paragraph: "Otra idea de web" },
+  en: { title: "Self-initiated", paragraph: "Another website idea" },
+};
+
+export const ALL_CASE_STUDIES: CaseStudyType[] = [
+  {
+    name: "Workout Tracker",
+    logo: "/case-study/WorkoutTracker.png",
+    description: { es: "", en: "" },
+    technologies: [""],
+    urlProject: "https://worktrack.jimynicanor.com/",
+  },
+  {
+    name: "Chuck Norris Joke",
+    logo: "/case-study/ChuckNorrisJoke.png",
+    description: { es: "", en: "" },
+    technologies: [""],
+    urlProject: "https://chuck-norris-joke.roseny.dev/",
+  },
+  {
+    name: "BitSip",
+    logo: "/case-study/BitSip.png",
+    description: { es: "", en: "" },
+    technologies: [""],
+    urlProject: "https://bitsip.roseny.dev/",
+  },
+  {
+    name: "Diet Pixie",
+    logo: "/case-study/DietPixie.png",
+    description: { es: "", en: "" },
+    technologies: [""],
+    urlProject: "https://diet-pixie.roseny.dev/",
+  },
+  {
+    name: "To-Do",
+    logo: "/case-study/ToDo.png",
+    description: { es: "", en: "" },
+    technologies: [""],
+    urlProject: "https://to-do.roseny.dev/",
+  },
+  // {
+  //   name: "Dashboard",
+  //   logo: "",
+  //   description: { es: "", en: "" },
+  //   technologies: [""],
+  //   urlProject: "https://dashboard.roseny.dev/",
+  // },
+];
+
+export const CONTACT_DATA = {
+  es: {
+    title: "Contáctame",
+    // paragraph: "",
+    forBusiness: "Quiero empoderar mi negocio",
+    btnBusiness: "Reinventate",
+    forRecruiter: "Quiero que formes parte de mi equipo",
+    btnRecruiter: "Contrátame",
+  },
+  en: {
+    title: "Contact me",
+    // paragraph: "",
+    forBusiness: "I want to empower my business",
+    btnBusiness: "Reinvent",
+    forRecruiter: "I want you to be part of my team",
+    btnRecruiter: "Hire me",
+  },
+};
 
 export const PROJECTS: Project[] = [
   {

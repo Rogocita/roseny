@@ -58,20 +58,20 @@ const { frontmatter } = Astro.props;
   </head>
   <body
     id="body-element"
-    class="w-full h-full min-h-[100vh] flex flex-col transition-colors text-blank-dark font-raleway bg-obscure text-xl md:text-2xl"
+    class="w-full h-full min-h-[100vh] p-4 flex flex-col transition-colors text-blank font-raleway bg-obscure text-xl md:text-2xl"
   >
-    <Header />
+    <!-- <Header /> -->
     <main
-      class="w-full max-w-[1000px] h-full min-h-[86dvh] mx-auto p-5 flex-1 flex flex-col"
+      class="w-full max-w-[1000px] h-full min-h-[86dvh] mx-auto flex-1 flex flex-col"
     >
       <slot />
     </main>
-    <!-- <Footer /> -->
-    <footer
+
+    <!-- <footer
       class="w-full flex gap-2 items-center justify-center p-2 text-xs md:text-sm"
     >
       2025 Roseny. Ⓒ
       <p class="flex items-center gap-3">All rights reserved</p>
-    </footer>
+    </footer> -->
   </body>
 </html>

@@ -1,0 +1,42 @@
+---
+import { Header } from "../../components/Header";
+import { Contact } from "../../components/Contact";
+import { Experience } from "../../components/Experience";
+import { Collaborations } from "../../components/Collaborations";
+import { HeroSection } from "../../components/HeroSection";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { CaseStudy } from "../../components/CaseStudy";
+import { Footer } from "../../components/Footer";
+
+// import { ChevronDown } from "../components/icons/ChevronDown";
+---
+
+<Header lang="en" />
+<BaseLayout>
+  <HeroSection client:idle lang="en" />
+  <Experience client:idle lang="en" />
+  <Collaborations client:only lang="en" />
+  <CaseStudy client:idle lang="en" />
+  <Contact client:idle lang="en" />
+
+  <!-- <section class="min-h-dvh flex flex-col justify-center py-5 gap-20">
+    <h2
+      class="text-center text-blank-light font-bold text-[36px] md:text-[40px] lg:text-[48px]"
+    >
+      My experience
+    </h2>
+    <ul class="w-full flex flex-col gap-20 font-sans">
+      <Projects client:idle />
+    </ul>
+  </section> -->
+  <!-- <section
+    class="min-h-dvh flex flex-col justify-center items-center gap-16 pt-[96px] md:pt-[106px]"
+  >
+    <h2
+      class="text-center text-blank-light font-bold text-[20px] md:text-[24px]"
+    >
+      I am looking for new opportunities
+    </h2>
+  </section> -->
+</BaseLayout>
+<Footer lang="en" />

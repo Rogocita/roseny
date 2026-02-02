@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
-
 :root {
   --accent: 136, 58, 234;
   --accent-light: 224, 204, 250;
@@ -14,8 +8,26 @@
     45deg,
     rgb(var(--accent)),
     rgb(var(--accent-light)) 30%,
-    rgb(255, 255, 255) 60%
+    rgb(255, 255, 255) 60% --primary: #e32833; --secondary: #ff0c87;
   );
+
+  --obscure: "#1E1613";
+  --blank: "#D9D9D9";
+  --blank-dark: "#9CA2C3";
+  --blank-light: "#CFDCE7";
+  --first: "#3085B1";
+  --second: "#CF9065";
+  --second-dark: "#63815E";
+  --second-light: "#CA8589";
+
+  --scroll-bg: #54586b;
+  --scroll-bar: #252238;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 html {
@@ -29,17 +41,17 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #252238;
+  background: var(--scroll-bar);
   border-radius: 5px;
-  border: 2px solid #54586b;
+  border: 1px solid var(--scroll-bg);
 }
 
 html::-webkit-scrollbar-track {
-  background-color: #54586b;
+  background-color: var(--scroll-bg);
 }
 
 html::-webkit-scrollbar-button:vertical {
-  background-color: #54586b;
+  background-color: var(--scroll-bg);
   background-repeat: no-repeat;
   background-size: 110%;
   background-position: center;
@@ -55,6 +67,28 @@ html::-webkit-scrollbar-button:vertical:increment {
 
 html::-webkit-scrollbar-button:hover {
   background-color: #999999;
+}
+
+.image-preview {
+  overflow-y: scroll;
+}
+
+.image-preview::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+.image-preview::-webkit-scrollbar-thumb {
+  background: var(--scroll-bar);
+  border-radius: 4px;
+  border: 1px solid var(--scroll-bg);
+}
+.image-preview::-webkit-scrollbar-track {
+  background-color: var(--scroll-bg);
+}
+
+h1,
+h2 {
+  text-align: center;
 }
 
 .frontend {

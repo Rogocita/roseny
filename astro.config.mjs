@@ -13,5 +13,9 @@ export default defineConfig({
   integrations: [tailwind(), react(), icon()],
   output: "server",
   adapter: cloudflare(),
-  devToolbar: { enabled: false }
+  devToolbar: { enabled: false },
+  i18n: {
+    locales: ["es", "en"],
+    defaultLocale: "es",
+  }
 });

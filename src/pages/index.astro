@@ -1,54 +1,26 @@
 ---
-// import { ChevronDown } from "../components/icons/ChevronDown";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
+
+import { Header } from "../components/Header";
 import { Contact } from "../components/Contact";
-import { Projects } from "../components/Projects";
+import { HeroSection } from "../components/HeroSection";
+import { Experience } from "../components/Experience";
+import { Collaborations } from "../components/Collaborations";
+import { CaseStudy } from "../components/CaseStudy";
+import { Footer } from "../components/Footer";
 ---
 
+<Header lang="en" />
+
 <BaseLayout>
-  <div class="min-h-dvh relative flex flex-col justify-center">
-    <div
-      class="h-full flex flex-col justify-center gap-12 pb-[140px] md:pb-[180px]"
-    >
-      <div class="text-blank-light cursor-pointer">
-        <h1
-          class="text-center p-8 text-[70px] md:text-[80px] lg:text-[90px] font-extrabold"
-        >
-          Roseny
-        </h1>
-        <h2
-          class="frontend text-center font-semibold p-3 text-[36px] md:text-[40px] lg:text-[48px]"
-        >
-          a Frontend Developer
-        </h2>
-      </div>
-      <section class="text-">
-        <p>
-          <span class="font-bold text-second">Self-taught</span> with a strong foundation
-          in
-          <span class="font-bold text-second">HTML, CSS and JavaScript</span>.
-        </p>
-        <p>
-          Experienced in personal and <span class="font-bold text-second"
-            >collaborative projects</span
-          >, looking for new opportunities.
-        </p>
-      </section>
-    </div>
-    <div class="w-full h-full flex items-end justify-center">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 384 512"
-        class="h-16 animate-bounce"
-        ><path
-          fill="currentColor"
-          d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7L54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
-        ></path></svg
-      >
-    </div>
-  </div>
-  <div class="min-h-dvh flex flex-col justify-center py-5 gap-20">
+  <HeroSection client:idle lang="es" />
+  <Experience client:idle lang="es" />
+  <Collaborations client:only lang="es" />
+  <CaseStudy client:idle lang="es" />
+  <Contact client:idle lang="es" />
+
+  <!-- <section class="min-h-dvh flex flex-col justify-center py-5 gap-20">
     <h2
       class="text-center text-blank-light font-bold text-[36px] md:text-[40px] lg:text-[48px]"
     >
@@ -57,8 +29,8 @@ import { Projects } from "../components/Projects";
     <ul class="w-full flex flex-col gap-20 font-sans">
       <Projects client:idle />
     </ul>
-  </div>
-  <div
+  </section> -->
+  <!-- <section
     class="min-h-dvh flex flex-col justify-center items-center gap-16 pt-[96px] md:pt-[106px]"
   >
     <h2
@@ -66,6 +38,6 @@ import { Projects } from "../components/Projects";
     >
       I am looking for new opportunities
     </h2>
-    <Contact />
-  </div>
+  </section> -->
 </BaseLayout>
+<Footer lang="es" />
