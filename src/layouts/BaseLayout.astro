@@ -61,10 +61,10 @@ const { frontmatter } = Astro.props;
     ></script>
 
     <script>
-      window.dataLayer = window.dataLayer || [];
-      const gtag = () => {
-        dataLayer.push(arguments);
-      };
+      (window as any).dataLayer = (window as any).dataLayer || [];
+      function gtag(...args: any[]) {
+        (window as any).dataLayer.push(arguments);
+      }
       gtag("js", new Date());
 
       gtag("config", "G-S8QH3FKHFE");
