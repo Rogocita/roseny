@@ -55,7 +55,22 @@ const { frontmatter } = Astro.props;
     />
     <meta name="twitter:image" content="/android-chrome-512x512.png" />
     <meta name="twitter:site" content="@roseny" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8QH3FKHFE"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      const gtag = () => {
+        dataLayer.push(arguments);
+      };
+      gtag("js", new Date());
+
+      gtag("config", "G-S8QH3FKHFE");
+    </script>
   </head>
+
   <body
     id="body-element"
     class="w-full h-full min-h-[100vh] p-4 flex flex-col transition-colors text-blank font-raleway bg-obscure text-xl md:text-2xl"
