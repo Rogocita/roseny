@@ -56,6 +56,21 @@ const { frontmatter } = Astro.props;
     <meta name="twitter:image" content="/android-chrome-512x512.png" />
     <meta name="twitter:site" content="@roseny" />
 
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0] as any,
+          j = d.createElement(s) as any,
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KXJRH4ZC");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8QH3FKHFE"
     ></script>
@@ -75,6 +90,16 @@ const { frontmatter } = Astro.props;
     id="body-element"
     class="w-full h-full min-h-[100vh] p-4 flex flex-col transition-colors text-blank font-raleway bg-obscure text-xl md:text-2xl"
   >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KXJRH4ZC"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- <Header /> -->
     <main
       class="w-full max-w-[1000px] h-full min-h-[86dvh] mx-auto flex-1 flex flex-col"
