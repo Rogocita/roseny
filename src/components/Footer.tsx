@@ -79,7 +79,11 @@ export const Footer = ({ lang }: FooterProps) => {
           <p className="flex items-center gap-3">
             {lang === "en" ? "by" : "por"}
           </p>
-          <a href="https://github.com/Rogocita" target="_blank">
+          <a
+            href="https://github.com/Rogocita"
+            target="_blank"
+            className="hover:text-blank-light"
+          >
             Rogocita
           </a>
           🇵🇪

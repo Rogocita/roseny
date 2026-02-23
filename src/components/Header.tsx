@@ -8,7 +8,7 @@ export const Header = ({ lang }: HeaderProps) => {
   return (
     <header className="w-full max-w-[1000px] mx-auto py-4 flex items-center justify-between relative text-blank-light">
       <a href="/">
-        <img src="/rogocita.svg" alt="" />
+        <img src="/rogocita.svg " alt="" className="bg-[url(/rogocita.webp)]" />
       </a>
 
       <div className="flex items-center justify-end gap-4">
@@ -19,12 +19,20 @@ export const Header = ({ lang }: HeaderProps) => {
         >
           {lang === "en" ? "Blog" : "Blog"}
         </a> */}
-        <a
+        {/* <a
           href="./#contact"
           target=""
           className="font-[500] transition-all hover:text-second-dark"
         >
           {lang === "en" ? "Contact" : "Contacto"}
+        </a> */}
+        <a
+          href="./#contact"
+          target=""
+          className="font-[500] transition-all hover:text-second-dark"
+        >
+          {/* {lang === "en" ? "Contact" : "Contacto"} */}
+          contact@roseny.dev
         </a>
       </div>
     </header>

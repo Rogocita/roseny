@@ -13,7 +13,6 @@ export const Experience = ({ lang }: ExperienceProps) => {
     <section className="min-h-dvh flex flex-col justify-center gap-[80px]">
       <h2 className="text-4xl md:text-5xl">{EXPERIENCE_TITTLE[lang].title}</h2>
       <div className="w-full flex flex-col items-center justify-center gap-6 md:gap-9">
-        {/* buttons for change experience */}
         {ALL_EXPERIENCES.length > 1 && (
           <div className="w-full flex items-center justify-end gap-4">
             <button
@@ -52,7 +51,6 @@ export const Experience = ({ lang }: ExperienceProps) => {
             </button>
           </div>
         )}
-        {/* card */}
         <ExperienceCard
           lang={lang}
           experience={ALL_EXPERIENCES[currentExperience]}

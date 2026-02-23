@@ -92,10 +92,94 @@ h2 {
 }
 
 .frontend {
-  animation: subtitle-animation infinite 2.5s ease;
+  animation: infinite 2.5s ease;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   /* animation: text-animation 10 alternate 5s ease-out; */
 
   /* transition: background-color 1s ease; */
+}
+
+.laminate {
+  animation: laminate-animation infinite 2.5s ease;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  /* animation: text-animation 10 alternate 5s ease-out; */
+
+  /* transition: background-color 1s ease; */
+}
+
+@keyframes pulse {
+  0% {
+    color: var(--first);
+  }
+  30% {
+    color: #94a9c7;
+  }
+  40% {
+    color: var(--blank-light);
+  }
+  60% {
+    color: #94a9c7;
+  }
+  80% {
+    color: var(--first);
+  }
+}
+.animate-flash {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes laminate-animation {
+  0% {
+    background: linear-gradient(var(--blank) 20%, var(--first) 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  10% {
+    background: linear-gradient(var(--first) 90%, var(--blank-light) 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  20% {
+    background: linear-gradient(var(--blank-light) 40%, var(--first) 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  30% {
+    background: linear-gradient(var(--first) 40%, var(--blank-light) 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  40% {
+    background: linear-gradient(var(--blank-light) 20%, var(--first) 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  60% {
+    background: linear-gradient(var(--first) 40%, var(--blank-light) 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  70% {
+    background: linear-gradient(var(--blank-light) 40%, var(--first) 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  90% {
+    background: linear-gradient(var(--first) 40%, var(--blank-light) 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: linear-gradient(var(--blank-light) 30%, var(--first) 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 @keyframes subtitle-animation {

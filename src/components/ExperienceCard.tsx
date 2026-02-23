@@ -20,13 +20,16 @@ export const ExperienceCard = ({ lang, experience }: ExperienceCardProps) => {
             className="object-contain"
           />
         </div>
-        <div
+        <a
           id="image-preview"
+          href={experience.urlProject}
+          target="_blank"
           className="image-preview h-[180px] sm:h-[380px] md:h-[550px] w-full  rounded-md overflow-y-scroll "
         >
           <img src={experience.previewImage} alt="" />
-        </div>
+        </a>
       </div>
+
       <div className="w-full  flex flex-col gap-4 pt-4 items-center md:justify-between md:flex-row-reverse">
         <a
           href={experience.urlProject}
